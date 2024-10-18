@@ -89,6 +89,36 @@ function isLeapYear(year) {
 function checkDateIsCorrect(day, month, year) {
   const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
+  if (year > new Date().getFullYear()) {
+    document.querySelector(`#footer[data-id="3"]`).textContent =
+      "Year must be in past";
+    formGoToRed(3);
+    yearIsCorrect = false;
+  }
+
+  if (
+    (year >= new Date().getFullYear() && month > new Date().getMonth() + 1) ||
+    year > new Date().getFullYear()
+  ) {
+    document.querySelector(`#footer[data-id="2"]`).textContent =
+      "Mounth must be in past";
+    formGoToRed(2);
+    monthIsCorrect = false;
+  }
+
+  if (
+    (year == new Date().getFullYear() &&
+      month >= new Date().getMonth() + 1 &&
+      day >= new Date().getDate()) ||
+    (year >= new Date().getFullYear() && month > new Date().getMonth() + 1) ||
+    year > new Date().getFullYear()
+  ) {
+    document.querySelector(`#footer[data-id="1"]`).textContent =
+      "Day must be in past";
+    formGoToRed(1);
+    dayIsCorrect = false;
+  }
+
   if (month < 1 || month > 12) {
     document.querySelector(`#footer[data-id="2"]`).textContent =
       "Must be a valid month";
@@ -96,39 +126,23 @@ function checkDateIsCorrect(day, month, year) {
     monthIsCorrect = false;
   }
 
-  if (year < 0) {
-    document.querySelector(`#footer[data-id="3"]`).textContent =
-      "Year can not be 0 or less";
-    formGoToRed(3);
-    yearIsCorrect = false;
-  }
-
-  if (year > new Date().getFullYear()) {
-    document.querySelector(`#footer[data-id="3"]"]`).textContent =
-      "Year must be in past";
-    formGoToRed(3);
-    yearIsCorrect = false;
-  }
-
   if (isLeapYear(year)) daysInMonth[1] = 29;
 
   if (day < 1 || day > daysInMonth[month - 1]) {
-    console.log("beka");
     document.querySelector(`#footer[data-id="1"]`).textContent =
       "Day must be valid";
     formGoToRed(1);
+    F;
     dayIsCorrect = false;
   } else if (day > 31 && !monthIsCorrect) {
-    console.log("beka1");
     document.querySelector(`#footer[data-id="1"]`).textContent =
       "Day must be valid";
     formGoToRed(1);
     dayIsCorrect = false;
-  } else {
-    console.log("beka2");
-    document.querySelector(`#footer[data-id="1"]`).textContent = "";
-    formGoToNormal(1);
-  }
+   } // else if (dayIsCorrect) {
+  //   document.querySelector(`#footer[data-id="1"]`).textContent = "";
+  //   formGoToNormal(1);
+  // }
 
   if (!dayIsCorrect || !yearIsCorrect || !monthIsCorrect) {
     dayIsCorrect = true;
