@@ -1,0 +1,39 @@
+<!-- <div data-id="1" class="container">
+          <div class="checkbox-wrapper">
+            <div data-clicked="false" data-id="1" class="fake-button-border">
+              <div data-id="1" class="fake-button" data-clicked="false">
+                <svg data-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path data-id="1" class="check-icon" data-hidden="true" fill="none" stroke="#fff" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-text-content">Jog around the park 3x</div>
+        </div>
+
+        <hr>
+
+        <div data-id="2" class="container">
+          <div class="checkbox-wrapper">
+            <div data-clicked="false" data-id="2" class="fake-button-border">
+              <div data-id="2" class="fake-button" data-clicked="false">
+                <svg data-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path data-id="2" class="check-icon" data-hidden="true" fill="none" stroke="#fff" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-text-content">10 minutes meditation</div>
+        </div>
+
+        <hr>
+
+        <div data-id="3" class="container">
+          <div class="checkbox-wrapper">
+            <div data-clicked="false" data-id="3" class="fake-button-border">
+              <div data-id="3" data-clicked="false" class="fake-button">
+                <svg data-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="9"><path data-id="3" class="check-icon" data-hidden="true" fill="none" stroke="#fff" stroke-width="2" d="M1 4.304L3.696 7l6-6"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-text-content">Read for 1 hour</div>
+        </div> -->
