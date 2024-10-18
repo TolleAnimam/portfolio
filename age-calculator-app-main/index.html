@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  
+
+  <main id="hero-wrapper">
+    <section id="hero">
+      <div  id="hero-container">
+        <div id="input-wrapper">
+          <div class="container" id="day-container">
+            <span data-span-id="1" data-red="false">DAY</span>
+            <input data-red="false" data-input-id="1" id="day-input" type="text" placeholder="DD">
+            <div id="footer" data-id="1"></div>
+          </div>
+          <div class="container" id="month-container">
+            <span data-span-id="2" data-red="false">MONTH</span>
+            <input data-red="false" data-input-id="2" id="month-input" type="text" placeholder="MM">
+            <div id="footer" data-id="2"></div>
+          </div>
+          <div class="container" id="year-container"> 
+            <span data-span-id="3" data-red="false">YEAR</span>
+            <input data-red="false" data-input-id="3" id="year-input" type="text" placeholder="YYYY">
+            <div id="footer" data-id="3"></div>
+          </div>
+        </div>
+        <hr>
+      </div> <button id="button"><img src="" alt=""><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+
+      <div id="calculations-wrapper">
+        <div class="calculations-display" id="year-calculations-display"><span>--</span> years</div>
+        <div class="calculations-display" id="month-calculations-display"><span>--</span> months</div>
+        <div class="calculations-display" id="day-calculations-display"><span>--</span> days</div>
+      </div>
+    </section>
+  </main>
+  
+  
+</body>
+</html>
